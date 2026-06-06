@@ -1,0 +1,87 @@
+# //  ModelSim SE-64 2021.3 Jul 13 2021 Linux 6.1.0-29-amd64
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+pwd
+# /home/25100465/Downloads/07_nanoCPU_SV_aluno
+do sim.do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 08:42:47 on Nov 25,2025
+# vlog -reportprogress 300 nanoCPU.sv 
+# -- Compiling module Reg16bit
+# -- Compiling module NanoCPU
+# 
+# Top level modules:
+# 	NanoCPU
+# End time: 08:42:48 on Nov 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 08:42:48 on Nov 25,2025
+# vlog -reportprogress 300 nanoTB.sv 
+# -- Compiling module nanoCPU_TB
+# 
+# Top level modules:
+# 	nanoCPU_TB
+# End time: 08:42:48 on Nov 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc=lprn" -t ps work.nanoCPU_TB 
+# Start time: 08:42:48 on Nov 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.nanoCPU_TB(fast)
+# Loading work.NanoCPU(fast)
+# Loading work.Reg16bit(fast)
+add wave -position end  sim:/nanoCPU_TB/memory[32]
+add wave -position end  sim:/nanoCPU_TB/memory[33]
+quit -sim
+# End time: 08:48:56 on Nov 25,2025, Elapsed time: 0:06:08
+# Errors: 0, Warnings: 0
+do sim.do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 08:48:57 on Nov 25,2025
+# vlog -reportprogress 300 nanoCPU.sv 
+# -- Compiling module Reg16bit
+# -- Compiling module NanoCPU
+# 
+# Top level modules:
+# 	NanoCPU
+# End time: 08:48:57 on Nov 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 08:48:57 on Nov 25,2025
+# vlog -reportprogress 300 nanoTB.sv 
+# -- Compiling module nanoCPU_TB
+# 
+# Top level modules:
+# 	nanoCPU_TB
+# End time: 08:48:57 on Nov 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc=lprn" -t ps work.nanoCPU_TB 
+# Start time: 08:48:57 on Nov 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.nanoCPU_TB(fast)
+# Loading work.NanoCPU(fast)
+# Loading work.Reg16bit(fast)
+add wave -position 19  sim:/nanoCPU_TB/memory[32]
+add wave -position 20  sim:/nanoCPU_TB/memory[33]
+add wave -position 19  sim:/nanoCPU_TB/memory[30]
+add wave -position 20  sim:/nanoCPU_TB/memory[31]
+add wave -position 19  sim:/nanoCPU_TB/memory[35]
+add wave -position 20  sim:/nanoCPU_TB/memory[36]
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/25100465/Downloads/07_nanoCPU_SV_aluno/wave.do
